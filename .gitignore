@@ -482,3 +482,34 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+EdGame/obj/project.nuget.cache
+EdGame/obj/project.assets.json
+EdGame/obj/EdGame.csproj.nuget.g.props
+EdGame/obj/EdGame.csproj.nuget.dgspec.json
+EdGame/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/EdGame.AssemblyInfoInputs.cache
+EdGame/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/EdGame.AssemblyInfo.cs
+EdGame/obj/Debug/net8.0-ios/iossimulator-arm64/EdGame.AssemblyInfoInputs.cache
+EdGame/obj/Debug/net8.0-ios/iossimulator-arm64/EdGame.AssemblyInfo.cs
+EdGame/obj/Debug/net8.0-ios/ios-arm64/refint/EdGame.dll
+EdGame/obj/Debug/net8.0-ios/ios-arm64/ref/EdGame.dll
+EdGame/obj/Debug/net8.0-ios/ios-arm64/nativelibraries/registrar.o
+EdGame/obj/Debug/net8.0-ios/ios-arm64/nativelibraries/EdGame
+EdGame/obj/Debug/net8.0-ios/ios-arm64/linker-cache/registrar.mm
+EdGame/obj/Debug/net8.0-ios/ios-arm64/linked/EdGame.pdb
+EdGame/obj/Debug/net8.0-ios/ios-arm64/linked/EdGame.dll
+EdGame/obj/Debug/net8.0-ios/ios-arm64/EdGame.pdb
+EdGame/obj/Debug/net8.0-ios/ios-arm64/EdGame.dll
+EdGame/obj/Debug/net8.0-ios/ios-arm64/EdGame.csproj.CoreCompileInputs.cache
+EdGame/obj/Debug/net8.0-ios/ios-arm64/EdGame.AssemblyInfoInputs.cache
+EdGame/obj/Debug/net8.0-ios/ios-arm64/EdGame.AssemblyInfo.cs
+EdGame/obj/Debug/net8.0-android/EdGame.AssemblyInfoInputs.cache
+EdGame/obj/Debug/net8.0-android/EdGame.AssemblyInfo.cs
+EdGame/obj/Debug/net8.0-android/designtime/build.props
+EdGame/obj/Debug/net8.0-android/build.props
+EdGame/bin/Debug/net8.0-ios/ios-arm64/EdGame.pdb
+EdGame/bin/Debug/net8.0-ios/ios-arm64/EdGame.dll
+EdGame/bin/Debug/net8.0-ios/ios-arm64/EdGame.app/EdGame.pdb
+EdGame/bin/Debug/net8.0-ios/ios-arm64/EdGame.app/EdGame.dll
+EdGame/bin/Debug/net8.0-ios/ios-arm64/EdGame.app/EdGame
+EdGame/bin/Debug/net8.0-ios/ios-arm64/EdGame.app/_CodeSignature/CodeResources
+EdGame/bin/Debug/net8.0-ios/ios-arm64/EdGame.app.dSYM/Contents/Resources/DWARF/EdGame

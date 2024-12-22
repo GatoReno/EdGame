@@ -1,4 +1,5 @@
- 
+
+using System;
 using System.Collections.ObjectModel; 
 using System.Windows.Input;  
 
@@ -12,12 +13,15 @@ public class GatoViewModel : BindableObject
     private UserModel? _player1;  // Usuario 1
     private UserModel? _player2;  // Usuario 2
     private UserModel? _currentUser;  // Jugador actual
+    private int[]? winningCombination;
+ 
 
     public ObservableCollection<UserModel> Users { get; set; }
 
  
-    public ICommand MakeMoveCommand { get; private set; }   
-    
+    public ICommand MakeMoveCommand { get; private set; }
+    public ICommand ResetCommand => new Command(ResetGame);
+
     public GatoViewModel()
     {
         Users = new ObservableCollection<UserModel>();
@@ -81,6 +85,10 @@ public class GatoViewModel : BindableObject
             if (CheckWinner())
             {
                 GameStatus = $"{CurrentUser?.Name} ha ganado!";
+
+                AnimateWinningCells();
+
+
             }
             else if (_board.All(cell => cell != null))  // Si no hay más espacios vacíos
             {
@@ -108,11 +116,21 @@ public class GatoViewModel : BindableObject
             new[] { 0, 4, 8 }, new[] { 2, 4, 6 }  // Diagonales
         };
 
+
+       
         foreach (var pattern in winPatterns)
         {
             if (_board[pattern[0]] == _board[pattern[1]] && _board[pattern[1]] == _board[pattern[2]] && _board[pattern[0]] != null)
             {
-                return true;
+                if (Board[pattern[0]] == Board[pattern[1]] &&
+                      Board[pattern[1]] == Board[pattern[2]] &&
+                      Board[pattern[0]] != "")
+                {
+                    winningCombination = pattern;
+                     
+                    
+                    return true;
+                }
             }
         }
 
@@ -122,14 +140,40 @@ public class GatoViewModel : BindableObject
     // Método para resetear el juego
     public void ResetGame()
     { 
-        SetPlayers(new UserModel { Name = "x" }, new UserModel { Name = "x" });
-        _board = new string[9];
+        SetPlayers(new UserModel { Name = "x" }, new UserModel { Name = "y" });
+        CleanValues();
+         
+        winningCombination = null;
         _currentPlayer = "X";  // El jugador "X" comienza
         _gameStatus = "En juego";
         CurrentUser = _player1;
+      
         OnPropertyChanged(nameof(Board));
         OnPropertyChanged(nameof(GameStatus));
+        OnPropertyChanged(nameof(CurrentUser));
     }
 
-  
+    private void CleanValues()
+    {
+        _board = new string[9]; Board = new string[9];
+
+    }
+
+    private async void AnimateWinningCells()
+    {
+        if (winningCombination != null)
+        {
+            foreach (var index in winningCombination)
+            {
+                var button = Application.Current?.MainPage.FindByName<Button>($"Button{index}");
+                if (button != null)
+                {
+                    await button.ScaleTo(1.5, 56, Easing.BounceIn);
+                    await button.ScaleTo(1, 1200, Easing.BounceOut);
+                }
+            }
+        }
+    }
+
+
 }

@@ -19,8 +19,8 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
- 		builder.Services.AddSingleton<GamePage>();
-        builder.Services.AddSingleton<GatoViewModel>();
+ 		builder.Services.AddTransient<GamePage>();
+        builder.Services.AddTransient<GatoViewModel>();
 
 		return builder.Build();
 	}
