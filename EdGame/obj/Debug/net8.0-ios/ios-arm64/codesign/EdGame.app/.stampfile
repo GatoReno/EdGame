@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign B5A246F65D828176CDF6DDFA88B1FBDF07B45255 --entitlements /Users/ed/Documents/EdGame/EdGame/obj/Debug/net8.0-ios/ios-arm64/Entitlements.xcent /Users/ed/Documents/EdGame/EdGame/bin/Debug/net8.0-ios/ios-arm64/EdGame.app
