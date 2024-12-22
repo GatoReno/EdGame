@@ -1,5 +1,5 @@
 ﻿namespace EdGame;
-
+using EdGame.Views;
 public partial class MainPage : ContentPage
 {
 	int count = 0;
@@ -20,5 +20,11 @@ public partial class MainPage : ContentPage
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
+
+	  private async void OnPlayButtonClicked(object sender, EventArgs e)
+        {
+            // Navegar usando la ruta registrada
+            await Shell.Current.GoToAsync(nameof(GamePage));
+        }
 }
 

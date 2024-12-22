@@ -12,17 +12,25 @@
 		<data>
 		Fpcy1P9DB6LaS9/SF7GYBL9pwco=
 		</data>
+		<key>CommunityToolkit.Mvvm.dll</key>
+		<data>
+		V3xFjVNisuKyHljJia3AKMyWVv8=
+		</data>
 		<key>EdGame.dll</key>
 		<data>
-		UEqoESv2gTeCEyGefZpFLvjnELI=
+		N8WQkzlrwlRB1V2jYvrZ1gIaCXs=
 		</data>
 		<key>EdGame.pdb</key>
 		<data>
-		Coejsc7TzWPFb9+tZXJaIEhcO14=
+		EgT8akrbAOUEt3wFri6DLGL0ZG4=
 		</data>
 		<key>Info.plist</key>
 		<data>
 		BM4gn/NlA+JktFaQQUr6DIseYgg=
+		</data>
+		<key>MauiInfo.plist</key>
+		<data>
+		iEtuUGCV6JM3gxS/pO33swhmpp8=
 		</data>
 		<key>MauiSplash.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -934,7 +942,7 @@
 		</data>
 		<key>runtimeconfig.bin</key>
 		<data>
-		mJD72ylZV+zAIbP55ZjyiFIyz7Q=
+		84ISwKKPFE9plRBULNR0ERhCK1Y=
 		</data>
 		<key>sk/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
@@ -1001,18 +1009,32 @@
 			Sg9vcuhOOfbha97QgaNLEp+RYB6XJAB3JBsipU27DYc=
 			</data>
 		</dict>
+		<key>CommunityToolkit.Mvvm.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fX61wGbP6IO0ObEgC/Xcs4ex5TGd0u29qp4jrf5BZFI=
+			</data>
+		</dict>
 		<key>EdGame.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0KtmfNvOsG723AQZk83XBlmoitDzeZ5u6soGthc4Fms=
+			qY0iILrNB6d0JxYfPPgj4llm50PsfDHtBR9LNhm/Zss=
 			</data>
 		</dict>
 		<key>EdGame.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BM9+3an7r7ecRve5OqcJEeg0D/6qtHohHB6IK3M6DcA=
+			ZnxmG1dv/dt/giEHJslcg9aCO5YLqDCOPYgvyU0MGDA=
+			</data>
+		</dict>
+		<key>MauiInfo.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tx0KXqEC+DvcCGyogQTEQWHcCWJYYqH24NtPwhpQEjo=
 			</data>
 		</dict>
 		<key>MauiSplash.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -2601,7 +2623,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EYTt9gvGwHBsOtgr6ea0u+tir7Zm+Ml8pstWxr2/Fp4=
+			XasrTcuH+CUb47RWRI2gf7ZHyeuDWMxvDqN0RqVxmek=
 			</data>
 		</dict>
 		<key>sk/Microsoft.Maui.Controls.resources.dll</key>

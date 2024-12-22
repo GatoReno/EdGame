@@ -34,6 +34,7 @@
 /Users/ed/Documents/EdGame/EdGame/bin/Debug/net8.0-ios/ios-arm64/publish/../EdGame.app/zh-Hans/Microsoft.Maui.Controls.resources.dll
 /Users/ed/Documents/EdGame/EdGame/bin/Debug/net8.0-ios/ios-arm64/publish/../EdGame.app/zh-Hant/Microsoft.Maui.Controls.resources.dll
 /Users/ed/Documents/EdGame/EdGame/bin/Debug/net8.0-ios/ios-arm64/publish/../EdGame.app/runtimeconfig.bin
+/Users/ed/Documents/EdGame/EdGame/bin/Debug/net8.0-ios/ios-arm64/publish/../EdGame.app/CommunityToolkit.Mvvm.dll
 /Users/ed/Documents/EdGame/EdGame/bin/Debug/net8.0-ios/ios-arm64/publish/../EdGame.app/Microsoft.Extensions.Configuration.dll
 /Users/ed/Documents/EdGame/EdGame/bin/Debug/net8.0-ios/ios-arm64/publish/../EdGame.app/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/ed/Documents/EdGame/EdGame/bin/Debug/net8.0-ios/ios-arm64/publish/../EdGame.app/Microsoft.Extensions.DependencyInjection.dll

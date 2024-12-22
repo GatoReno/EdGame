@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "weGnZy65nD0=",
+  "dgSpecHash": "8GP9H/KBH1c=",
   "success": true,
   "projectFilePath": "/Users/ed/Documents/EdGame/EdGame/EdGame.csproj",
   "expectedPackageFiles": [
+    "/Users/ed/.nuget/packages/communitytoolkit.mvvm/8.4.0/communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "/Users/ed/.nuget/packages/googlegson/2.10.1.4/googlegson.2.10.1.4.nupkg.sha512",
     "/Users/ed/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "/Users/ed/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
