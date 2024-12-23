@@ -1,5 +1,4 @@
 
-using System;
 using System.Collections.ObjectModel; 
 using System.Windows.Input;  
 
@@ -7,6 +6,7 @@ namespace EdGame.ViewModels;
 public class GatoViewModel : BindableObject
 {
 
+#region props
     private string[] _board;  // El tablero de 3x3 representado como un arreglo de cadenas
     private string? _currentPlayer; // Jugador actual ("X" o "O")
     private string? _gameStatus; // Estado del juego: "En juego", "Ganador", "Empate"
@@ -14,36 +14,8 @@ public class GatoViewModel : BindableObject
     private UserModel? _player2;  // Usuario 2
     private UserModel? _currentUser;  // Jugador actual
     private int[]? winningCombination;
- 
 
-    public ObservableCollection<UserModel> Users { get; set; }
-
- 
-    public ICommand MakeMoveCommand { get; private set; }
-    public ICommand ResetCommand => new Command(ResetGame);
-
-    public GatoViewModel()
-    {
-        Users = new ObservableCollection<UserModel>();
-        
-        MakeMoveCommand = new Command<string>(MakeMove);
-        _board = new string[9]; // Inicializa el tablero de 9 espacios
-        ResetGame();
-    }
-
-
-    // Propiedad para el tablero
-    public string[] Board
-    {
-        get => _board;
-        set
-        {
-            _board = value;
-            OnPropertyChanged();
-        }
-    }
-
-    // Propiedad para el estado del juego
+     // Propiedad para el estado del juego
     public string? GameStatus
     {
         get => _gameStatus;
@@ -65,6 +37,37 @@ public class GatoViewModel : BindableObject
         }
     }
 
+  // Propiedad para el tablero
+    public string[] Board
+    {
+        get => _board;
+        set
+        {
+            _board = value;
+            OnPropertyChanged();
+        }
+    }
+
+    public ObservableCollection<UserModel> Users { get; set; }
+
+ 
+    public ICommand MakeMoveCommand { get; private set; }
+    public ICommand ResetCommand => new Command(ResetGame);
+
+#endregion
+    public GatoViewModel()
+    {
+        Users = new ObservableCollection<UserModel>();
+        
+        MakeMoveCommand = new Command<string>(MakeMove);
+        Board = new string[9]; // Inicializa el tablero de 9 espacios
+        ResetGame();
+    }
+
+
+   
+
+   
     // Método para configurar los jugadores (puedes llamar este método desde la vista)
     public void SetPlayers(UserModel player1, UserModel player2)
     {
@@ -148,15 +151,15 @@ public class GatoViewModel : BindableObject
         _gameStatus = "En juego";
         CurrentUser = _player1;
       
-        OnPropertyChanged(nameof(Board));
+       
         OnPropertyChanged(nameof(GameStatus));
         OnPropertyChanged(nameof(CurrentUser));
     }
 
     private void CleanValues()
     {
-        _board = new string[9]; Board = new string[9];
-
+         Board = null; Board = new string[9];
+        OnPropertyChanged(nameof(Board));
     }
 
     private async void AnimateWinningCells()

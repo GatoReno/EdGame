@@ -23,7 +23,68 @@
 
                Margin="0,10"/>
         
+           
+
+        <!-- Crear el tablero de Gato -->
+        <Grid 
+            RowSpacing="8"
+            ColumnSpacing="8"
+            RowDefinitions="*,*,*" ColumnDefinitions="*,*,*">
+       
+
             <!-- Las celdas del tablero -->
+            <Button x:Name="Button0" Text="{Binding Board[0], Mode=TwoWay}" Command="{Binding MakeMoveCommand}" CommandParameter="0" Grid.Row="0" Grid.Column="0">
+            <Button.Behaviors>
+                <behaviors:BounceBehavior />
+            </Button.Behaviors>
+        </Button>
+            <Button x:Name="Button1" Text="{Binding Board[1], Mode=TwoWay}" Command="{Binding MakeMoveCommand}" CommandParameter="1" Grid.Row="0" Grid.Column="1">
+            <Button.Behaviors>
+                <behaviors:BounceBehavior />
+            </Button.Behaviors>
+        </Button>
+            <Button x:Name="Button2" Text="{Binding Board[2], Mode=TwoWay}" Command="{Binding MakeMoveCommand}" CommandParameter="2" Grid.Row="0" Grid.Column="2">
+            <Button.Behaviors>
+                <behaviors:BounceBehavior />
+            </Button.Behaviors>
+        </Button>
+
+            <Button x:Name="Button3" Text="{Binding Board[3], Mode=TwoWay}" Command="{Binding MakeMoveCommand}" CommandParameter="3" Grid.Row="1" Grid.Column="0">
+            <Button.Behaviors>
+                <behaviors:BounceBehavior />
+            </Button.Behaviors>
+        </Button>
+            <Button x:Name="Button4" Text="{Binding Board[4], Mode=TwoWay}" Command="{Binding MakeMoveCommand}" CommandParameter="4" Grid.Row="1" Grid.Column="1">
+            <Button.Behaviors>
+                <behaviors:BounceBehavior />
+            </Button.Behaviors>
+        </Button>
+            <Button x:Name="Button5" Text="{Binding Board[5], Mode=TwoWay}" Command="{Binding MakeMoveCommand}" CommandParameter="5" Grid.Row="1" Grid.Column="2">
+            <Button.Behaviors>
+                <behaviors:BounceBehavior />
+            </Button.Behaviors>
+        </Button>
+
+            <Button x:Name="Button6" Text="{Binding Board[6], Mode=TwoWay}" Command="{Binding MakeMoveCommand}" CommandParameter="6" Grid.Row="2" Grid.Column="0">
+            <Button.Behaviors>
+                <behaviors:BounceBehavior />
+            </Button.Behaviors>
+        </Button>
+            <Button x:Name="Button7" Text="{Binding Board[7], Mode=TwoWay}" Command="{Binding MakeMoveCommand}" CommandParameter="7" Grid.Row="2" Grid.Column="1">
+            <Button.Behaviors>
+                <behaviors:BounceBehavior />
+            </Button.Behaviors>
+        </Button>
+            <Button x:Name="Button8" Text="{Binding Board[8], Mode=TwoWay}" Command="{Binding MakeMoveCommand}" CommandParameter="8" Grid.Row="2" Grid.Column="2">
+            <Button.Behaviors>
+                <behaviors:BounceBehavior />
+            </Button.Behaviors>
+        </Button>
+        </Grid> 
+
+
+
+         <!-- Las celdas del tablero -->
             <Label Text="{Binding Board[0]}"  Grid.Row="0" Grid.Column="0"/>
             <Label Text="{Binding Board[1]}" Grid.Row="0" Grid.Column="1"/>
             <Label Text="{Binding Board[2]}"   Grid.Row="0" Grid.Column="2"/>
@@ -38,62 +99,5 @@
             <Label Text="{Binding Board[6]}"   Grid.Row="2" Grid.Column="0"/>
             <Label Text="{Binding Board[7]}"   Grid.Row="2" Grid.Column="1"/>
             <Label Text="{Binding Board[8]}" Grid.Row="2" Grid.Column="2"/>
-
-        <!-- Crear el tablero de Gato -->
-        <Grid 
-            RowSpacing="8"
-            ColumnSpacing="8"
-            RowDefinitions="*,*,*" ColumnDefinitions="*,*,*">
-       
-
-            <!-- Las celdas del tablero -->
-            <Button x:Name="Button0" Text="{Binding Board[0]}" Command="{Binding MakeMoveCommand}" CommandParameter="0" Grid.Row="0" Grid.Column="0">
-            <Button.Behaviors>
-                <behaviors:BounceBehavior />
-            </Button.Behaviors>
-        </Button>
-            <Button x:Name="Button1" Text="{Binding Board[1]}" Command="{Binding MakeMoveCommand}" CommandParameter="1" Grid.Row="0" Grid.Column="1">
-            <Button.Behaviors>
-                <behaviors:BounceBehavior />
-            </Button.Behaviors>
-        </Button>
-            <Button x:Name="Button2" Text="{Binding Board[2]}" Command="{Binding MakeMoveCommand}" CommandParameter="2" Grid.Row="0" Grid.Column="2">
-            <Button.Behaviors>
-                <behaviors:BounceBehavior />
-            </Button.Behaviors>
-        </Button>
-
-            <Button x:Name="Button3" Text="{Binding Board[3]}" Command="{Binding MakeMoveCommand}" CommandParameter="3" Grid.Row="1" Grid.Column="0">
-            <Button.Behaviors>
-                <behaviors:BounceBehavior />
-            </Button.Behaviors>
-        </Button>
-            <Button x:Name="Button4" Text="{Binding Board[4]}" Command="{Binding MakeMoveCommand}" CommandParameter="4" Grid.Row="1" Grid.Column="1">
-            <Button.Behaviors>
-                <behaviors:BounceBehavior />
-            </Button.Behaviors>
-        </Button>
-            <Button x:Name="Button5" Text="{Binding Board[5]}" Command="{Binding MakeMoveCommand}" CommandParameter="5" Grid.Row="1" Grid.Column="2">
-            <Button.Behaviors>
-                <behaviors:BounceBehavior />
-            </Button.Behaviors>
-        </Button>
-
-            <Button x:Name="Button6" Text="{Binding Board[6]}" Command="{Binding MakeMoveCommand}" CommandParameter="6" Grid.Row="2" Grid.Column="0">
-            <Button.Behaviors>
-                <behaviors:BounceBehavior />
-            </Button.Behaviors>
-        </Button>
-            <Button x:Name="Button7" Text="{Binding Board[7]}" Command="{Binding MakeMoveCommand}" CommandParameter="7" Grid.Row="2" Grid.Column="1">
-            <Button.Behaviors>
-                <behaviors:BounceBehavior />
-            </Button.Behaviors>
-        </Button>
-            <Button x:Name="Button8" Text="{Binding Board[8]}" Command="{Binding MakeMoveCommand}" CommandParameter="8" Grid.Row="2" Grid.Column="2">
-            <Button.Behaviors>
-                <behaviors:BounceBehavior />
-            </Button.Behaviors>
-        </Button>
-        </Grid> 
     </StackLayout>
 </ContentPage>
